@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gloria Hallelujah">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Montserrat", sans-serif;}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>Дебатер</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Мемуары</a>
+    <a href="#" class="w3-bar-item w3-button">Тряпки</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a href="#" class="w3-bar-item w3-button">Обэд</a>
+    <a href="#" class="w3-bar-item w3-button">Курсы</a>
+    <a href="#" class="w3-bar-item w3-button">Люди</a>
+    <a href="#" class="w3-bar-item w3-button">18+</a>
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Связь</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Газета</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding"> VIP Подписка </a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">ПУТЬ ДЕБАТЕРА</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"></p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+<!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">ЛУЧШИЕ ТОВАРЫ</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="MONOS IN BLACK.jpg" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+    
+     
+ 
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="download (3).jpg" style="width:100%">
+        <p>Перекус таксиста<br><b>500р.</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="ryan gosling.jpg" style="width:100%">
+        <p>Райан Гослинг<br><b>бесценно</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="download (6).jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Витамины<br><b>только 7000р.</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="goddamn.jpg" style="width:100%">
+        <p>Кот в костюме<br><b>20.000р.</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="download (4).jpg" style="width:100%">
+        <p>Сборник стихов (feat.Дебатер и Бараш)<br><b>10.000р</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="99cddaa7-8223-4225-916e-0bc367c2e8b6.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>LAYS со вкусом бетона<br><b class="w3-text-red">400р.</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Aluf Plastics Rct-60 Star Sealed Coreless Rolls With E-z Tie Flap Closure, 60 Ga.jpg" style="width:100%">
+        <p>Твое мнение<br><b>2р.</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="download (5).jpg" style="width:100%">
+        <p>Творожок с Ежиком<br><b>1000р.</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>VIP подписка</h1>
+    <p>VIP подписка меняет твое подсознание,материальное положение и лечит от рака.</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Email" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">ХОЧУ </button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Назрел вопрос?</h4>
+        <p>Хочешь перетереть за жизнь? Воспользуйся нашей голубиной почтой.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Твое погоняло" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Писанина" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Отправить</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>О Дебатере</h4>
+        <p>Директор МКС</p>
+        <p>QI 3000</p>
+        <p>Четырежды выпускник Гарварда</p>
+        <p>Актер,поэт и художник</p>
+        <p>Обладатель 4 оскаров</p>
+        <p>Главный следователь Чечни </p>
+        <p>Лучший варщик мефедрона</p>
+        <p>Примерный муж и отец.</p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>МАГАЗИНЫ</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> г.Чебоксары</p>
+        <p><i class="fa fa-fw fa-phone"></i>  8 (871) 229-62-00</p>
+        <p><i class="fa fa-fw fa-envelope"></i> urmom@mail.com</p>
+        <h4>Принимаем оплату</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> листьями</p>
+        <p><i class="fa fa-fw fa-credit-card"></i>навозом </p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">НЕ <a href="https://www.youtube.com/watch?v=WLpJctQh8r0" title="W3.CSS" target="_blank" class="w3-hover-opacity">нажимать</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">газета "Табуретка"</h2>
+      <p>Подпишись на утреннюю рассылку,чтобы стать самым умным и хорошим.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
